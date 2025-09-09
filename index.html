@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aola Company</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <!-- กรอกชื่อหรือโลโก้บริษัทที่นี่ -->
+                Aola Company
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link" onclick="showPage('home')">หน้าแรก</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">บริการ</a>
+                    <div class="dropdown-content">
+                        <a href="#" class="dropdown-item" onclick="showPage('service1')">Cloud Service</a>
+                        <a href="#" class="dropdown-item" onclick="showPage('service2')">IT Solution</a>
+                        <a href="#" class="dropdown-item" onclick="showPage('service3')">Infrastructure</a>
+                        <a href="#" class="dropdown-item" onclick="showPage('service4')">บริการอื่นๆ</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" onclick="showPage('about')">ประวัติความเป็นมา</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" onclick="showPage('contact')">ติดต่อ</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Page -->
+    <div id="home" class="page active">
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Aola Company</h1>
+                <p>บริษัทดำเนินกิจการเกี่ยวกับ Cloud soluton และ Implement ระบบเป็นหลักสามารถจัดวาง Infrastructure ให้กับลูกค้าที่ต้องการการวางระบบ</p>
+                <a href="#" class="cta-button" onclick="showPage('about')">เรียนรู้เพิ่มเติม</a>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2 class="section-title">บริการของเรา</h2>
+            <div class="content-grid">
+                <div class="content-card">
+                    <div class="card-image">
+                        <img src="images/Picture1.jpg" alt="บริการ 1" />
+                        <!-- ใส่รูปภาพหรือไอคอนที่นี่ --> 
+                    </div>
+                    <h3 class="card-title">บริการ Cloud Storage</h3>
+                    <p class="card-text">บริการจัดเก็บข้อมูลผ่านอินเทอร์เน็ต โดยข้อมูลจะถูกเก็บไว้บนเซิร์ฟเวอร์ภายนอกของผู้ให้บริการคลาวด์ (Cloud Provider) 
+                        ซึ่งผู้ใช้สามารถเข้าถึงข้อมูลได้จากทุกที่ ทุกเวลา และทุกอุปกรณ์ที่มีการเชื่อมต่ออินเทอร์เน็ต</p>
+                </div>
+                <div class="content-card">
+                    <div class="card-image">
+                        <img src="images/Picture2.jpg" alt="บริการ 2" />
+                        <!-- ใส่รูปภาพหรือไอคอนที่นี่ -->
+                    </div>
+                    <h3 class="card-title">บริการติดตั้งสาย Lan</h3>
+                    <p class="card-text">บริการตรวจสอบพื้นที่การเดินสายแลนและจุดติดตั้ง Lan เพื่อประเมินหน้างานให้กับลูกค้าทั้งะุรกิจขนาด SME ไปจนถึงระดับ มหาชน</p>
+                </div>
+                <div class="content-card">
+                    <div class="card-image">
+                        <img src="images/Picture3.jpg" alt="บริการ 3" />
+                        <!-- ใส่รูปภาพหรือไอคอนที่นี่ -->
+                      
+                    </div>
+                    <h3 class="card-title">บริการ IT Solution</h3>
+                    <p class="card-text">คือบริการที่ใช้เทคโนโลยีสารสนเทศ (Information Technology) เพื่อแก้ไขปัญหา เพิ่มประสิทธิภาพการทำงาน และสนับสนุนการเติบโตของธุรกิจ 
+                        โดยครอบคลุมตั้งแต่การวางระบบเครือข่าย ความปลอดภัยไซเบอร์ การพัฒนาซอฟต์แวร์และเว็บแอปพลิเคชัน</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Service 1 Page -->
+    <div id="service1" class="page">
+        <section class="content-section">
+            <h2 class="section-title">Cloud Solution</h2>
+            <div class="service-detail">
+                <div class="service-image">
+                    <!-- ใส่รูปภาพบริการที่นี่ -->
+                    <div class="card-image">
+                        <img src="images/cloudsolution.jpeg" alt="cloudsolution" />
+                    </div>
+                </div>
+                <div class="service-content">
+                    <h3>รายละเอียดบริการ</h3>
+                    <p>บริการโครงสร้างพื้นฐานและแพลตฟอร์มด้านไอทีที่อยู่บนระบบคลาวด์ </p>
+                        เพื่อรองรับการทำงานขององค์กร โดยครอบคลุมทั้ง การจัดเก็บข้อมูล, ระบบประมวลผล, แอปพลิเคชัน, ความปลอดภัย และการเชื่อมต่อ โดยไม่จำเป็นต้องลงทุนซื้อและดูแลอุปกรณ์เองทั้งหมด
+                    บริการ Cloud Solution สามารถแบ่งเป็นหลายรูปแบบ เช่น
+                    <p></p>
+                    <ul>
+                        <li><strong>IaaS (Infrastructure as a Service): </strong>ให้เช่าเครื่องเซิร์ฟเวอร์ เสมือน ระบบจัดเก็บข้อมูล และระบบเครือข่าย</li>
+                        <li><strong>PaaS (Platform as a Service): </strong>จัดเตรียมแพลตฟอร์มพร้อมสำหรับนักพัฒนาเพื่อสร้างและรันแอปพลิเคชัน</li>
+                        <li><strong>SaaS (Software as a Service): </strong>บริการซอฟต์แวร์ที่พร้อมใช้งานผ่านอินเทอร์เน็ต เช่น Email, Collaboration Tools, ERP, CRM</li>
+                    </ul>
+                    </p>
+                    
+                    <h3>คุณสมบัติเด่น (Key Features / Benefits)</h3>
+                    <ul>
+                        <li>ความยืดหยุ่น (Scalability)</li>
+                        <li>ลดต้นทุนการลงทุน (Cost Efficiency)</li>
+                        <li>ความพร้อมใช้งานสูง (High Availability)</li>
+                        <li>ความปลอดภัย (Security & Compliance)</li>
+                        <li>การเข้าถึงง่าย (Accessibility)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Service 2 Page -->
+    <div id="service2" class="page">
+        <section class="content-section">
+            <h2 class="section-title">IT Solution</h2>
+            <div class="service-detail">
+                <div class="service-image">
+                    <!-- ใส่รูปภาพบริการที่นี่ -->
+                    <div class="card-image">
+                        <img src="images/itsolution.jpg" alt="itsolution" />
+
+                    </div>
+                </div>
+                <div class="service-content">
+                    <h3>รายละเอียดบริการ</h3>
+                    <p>คือบริการด้านเทคโนโลยีสารสนเทศแบบครบวงจร ที่ช่วยให้องค์กรสามารถจัดการโครงสร้างพื้นฐานด้านไอที ซอฟต์แวร์ ระบบความปลอดภัย และบริการสนับสนุน ได้อย่างมีประสิทธิภาพ
+                        โดยบริการ IT Solution สามารถปรับให้เหมาะสมกับแต่ละองค์กร เช่น</p>
+                    <ul>
+                        <li><strong>Infrastructure Solution </strong>  วางระบบเครือข่าย, Server, Storage, Data Center</li>
+                        <li><strong>Security Solution</strong> ระบบป้องกันภัยไซเบอร์, Firewall, Data Protection, Compliance</li>
+                        <li><strong>IT Support & Managed Services</strong>บริการดูแลและซัพพอร์ตด้าน IT อย่างต่อเนื่อง</li>
+                    </ul>
+                    <h3>คุณสมบัติเด่น (Key Features / Benefits)</h3>
+                    <ul>
+                        <li>บริการครบวงจร (End-to-End Service)</li>
+                        <li>ความปลอดภัยของระบบ (Enhanced Security)</li>
+                        <li>ความยืดหยุ่นและปรับแต่งได้ (Customizable & Scalable)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Service 3 Page -->
+    <div id="service3" class="page">
+        <section class="content-section">
+            <h2 class="section-title">Infrastructure Solution</h2>
+            <div class="service-detail">
+                <div class="service-image">
+                    <!-- ใส่รูปภาพบริการที่นี่ -->
+                    <div class="card-image">
+                        <img src="images/infra.png" alt="infra" />
+                    </div>
+                </div>
+                <div class="service-content">
+                    <h3>รายละเอียดบริการ</h3>
+                    <p>คือบริการออกแบบ ติดตั้ง และดูแลโครงสร้างพื้นฐานด้านไอที (IT Infrastructure) ขององค์กร ให้พร้อมรองรับการทำงานทั้งในปัจจุบันและอนาคต โดยครอบคลุมทั้ง เครือข่าย (Network), เซิร์ฟเวอร์ (Server), ระบบจัดเก็บข้อมูล (Storage), Data Center, Virtualization, และระบบสำรองข้อมูล (Backup/Disaster Recovery)
+                        บริการนี้ช่วยให้องค์กรมี ระบบไอทีที่มีเสถียรภาพ ปลอดภัย และรองรับการเติบโต โดยไม่ต้องกังวลเรื่องการลงทุนที่สูงหรือการขาดแคลนบุคลากรผู้เชี่ยวชาญ</p>
+                    
+                    <h3>คุณสมบัติเด่น</h3>
+                    <ul>
+                        <li>โครงสร้างพื้นฐานที่มั่นคง (Reliable & Stable Infrastructure)</li>
+                        <li>การปรับขยายได้ง่าย (Scalability)</li>
+                        <li>รองรับระบบหลากหลาย (Multi-Platform Support)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Service 4 Page -->
+    <div id="service4" class="page">
+        <section class="content-section">
+            <h2 class="section-title">บริการติดตั้งและเดินสาย LAN (Structured Cabling Service)</h2>
+            <div class="service-detail">
+                <div class="service-image">
+                    <!-- ใส่รูปภาพบริการที่นี่ -->
+                    <div class="card-image"><img src="images/Picture2.jpg" alt="Lan"></div>
+                </div>
+                <div class="service-content">
+                    <h3>รายละเอียดบริการ</h3>
+                    <p>บริการ <strong> เดินสาย LAN และติดตั้งระบบเครือข่าย (Network Cabling Solution)</strong> สำหรับองค์กรทุกขนาด โดยทีมงานผู้เชี่ยวชาญจะช่วยออกแบบ วางระบบ และติดตั้งสายสัญญาณอย่างเป็นมาตรฐาน เพื่อรองรับทั้ง <strong> Data, Voice, และระบบ IoT/Smart Office</strong></p>
+                        <p>ครอบคลุมตั้งแต่การสำรวจพื้นที่ ออกแบบโครงสร้างการเดินสาย <strong> ติดตั้งตู้ Rack อุปกรณ์เครือข่าย (Switch, Router, Access Point) </strong>รวมถึงการทดสอบและรับรองคุณภาพสัญญาณ (Certification)</p>
+                    
+                    <h3>คุณสมบัติเด่น</h3>
+                    <ul>
+                        <li>มาตรฐานสูง (Standardized Installation)</li>
+                        <li>ความเสถียรและปลอดภัย (Stable & Secure Connection)</li>
+                        <li>รองรับการขยายในอนาคต (Future Ready)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- About Page -->
+    <div id="about" class="page">
+        <section class="content-section">
+            <h2 class="section-title">ประวัติความเป็นมา</h2>
+            <div class="about-content">
+                <div class="company-image">
+                    <!-- ใส่รูปภาพบริษัทที่นี่ -->
+                    <div class="card-image"><img src="images/Team.jpg" alt="team"></div>
+                </div>
+                <div class="company-story">
+                    <h3>เรื่องราวของเรา</h3>
+                    <p>บริษัทของเราเกิดขึ้นจากวิสัยทัศน์ในการช่วยให้องค์กรสามารถนำ <strong>เทคโนโลยี Cloud Solution</strong> มาใช้เพื่อเพิ่มประสิทธิภาพการทำงาน ลดต้นทุนด้านไอที และสร้างความยืดหยุ่นในการดำเนินธุรกิจ</p>
+                    <p>เริ่มต้นจากทีมผู้เชี่ยวชาญด้านระบบเครือข่ายและโครงสร้างพื้นฐานไอที ที่เล็งเห็นถึงการเปลี่ยนแปลงของโลกดิจิทัล และความต้องการขององค์กรที่ต้องการระบบที่ <strong>เสถียร ปลอดภัย และสามารถปรับขยายได้ </strong>เราจึงก่อตั้งบริษัทขึ้นเพื่อให้บริการด้าน Cloud และ IT Infrastructure อย่างครบวงจร</p>
+                    <p>ตลอดระยะเวลาในการดำเนินงาน บริษัทได้ให้บริการลูกค้าหลากหลายอุตสาหกรรม ทั้ง<strong> ธุรกิจขนาดเล็ก (SMEs), องค์กรขนาดใหญ่, และหน่วยงานภาครัฐ</strong> โดยมุ่งเน้นการออกแบบโซลูชันที่ตรงตามความต้องการของลูกค้าแต่ละราย พร้อมทั้งมีทีมงานคอยสนับสนุนและให้คำปรึกษาอย่างต่อเนื่อง
+
+ด้วยความมุ่งมั่นในพันธกิจของเรา บริษัทจึงไม่เพียงแต่เป็นผู้ให้บริการ Cloud Solution เท่านั้น แต่ยังเป็น <strong> พันธมิตรด้านเทคโนโลยี </strong> ที่ช่วยผลักดันให้องค์กรสามารถก้าวสู่ <strong>Digital Transformation</strong> ได้อย่างมั่นใจ</p>
+                </div>
+            </div>
+            
+            <div class="timeline">
+                <h3 class="section-title">เหตุการณ์สำคัญ</h3>
+                <div class="timeline-item">
+                    <h4>2026 - ก่อตั้งบริษัท</h4>
+                    <p>บริษัทก่อตั้งขึ้นโดยทีมผู้เชี่ยวชาญด้านไอทีและคลาวด์ เพื่อให้บริการโซลูชันด้าน Cloud Infrastructure และ IT Services</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>2026 - เปิดตัวบริการ Cloud Solution แรก</h4>
+                    <p>เริ่มให้บริการระบบ Cloud Infrastructure สำหรับองค์กรขนาดกลางและขนาดเล็ก (SMEs)</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>ปี 2027 - ขยายบริการด้าน Managed Service</h4>
+                    <p>เปิดบริการดูแลระบบ IT และ Cloud แบบครบวงจร เพื่อช่วยลูกค้าโฟกัสธุรกิจหลักโดยไม่ต้องกังวลด้านเทคโนโลยี</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>ปี 2028 - ได้รับการรับรองมาตรฐานสากล</h4>
+                    <p>บริษัทผ่านมาตรฐานด้าน ISO/IEC 27001 (Information Security Management) และมาตรฐานความปลอดภัยอื่น ๆ</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Contact Page -->
+    <div id="contact" class="page">
+        <section class="content-section">
+            <h2 class="section-title">ติดต่อเรา</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>ข้อมูลการติดต่อ</h3>
+                    <div class="contact-item">
+                        <h4>ที่อยู่</h4>
+                        <p>183 อาคารสายลมคอมโด แขวงทุ่งสองห้อง เขตหลักสี่ จังหวัด กรุงเทพมหานคร 10210</p>
+                    </div>
+                    <div class="contact-item">
+                        <h4>โทรศัพท์</h4>
+                        <p>+6693-907-2307</p>
+                    </div>
+                    <div class="contact-item">
+                        <h4>อีเมล</h4>
+                        <p>anucha.pro300@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <h4>เวลาทำการ</h4>
+                        <p> จันทร์-ศุกร์ 9:00-18:00</p>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>ส่งข้อความถึงเรา</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">ชื่อ-นามสกุล</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">อีเมล</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">โทรศัพท์</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">หัวข้อ</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">ข้อความ</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">ส่งข้อความ</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
